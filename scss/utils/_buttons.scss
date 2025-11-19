@@ -1,0 +1,49 @@
+.button {
+  padding: 16px 32px;
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover {
+  color: var(--color-brand-normal-dark);
+  background-color: transparent;
+  border-color: currentColor;
+}
+
+.button:disabled {
+  color: gray;
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.header_button {
+  padding: 16px 32px;
+  color: var(--color-primary-light);
+  background-color: var(--color-brand-normal);
+  border: 2px solid var(--color-brand-normal);
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  // display: none;
+
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+
+.header-burger-button {
+  border: none;
+  background-color: transparent;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  fill: var(--color-primary-light);
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
