@@ -1,5 +1,5 @@
 .main-section {
-  padding: 272px 0;
+  padding: 124px 0;
   background-image: linear-gradient(
       102.76deg,
       rgba(18, 18, 17, 0.78) 2.03%,
@@ -11,10 +11,13 @@
   background-position: center top;
   background-size: cover;
   /* background-attachment: fixed; */
+  @media screen and (min-width: 1280px) {
+    padding: 272px 0;
+  }
 }
 
 .main-title {
-  margin-bottom: 0;
+  margin-bottom: 48px;
   color: var(--color-primary-light);
   text-align: center;
   font-weight: 900;
@@ -22,6 +25,7 @@
   line-height: 1;
 
   @media screen and (max-width: 1280px) {
+    margin-bottom: 0;
     font-size: 128px;
     line-height: 1.5;
   }
@@ -32,18 +36,37 @@
 }
 
 .advantages-section {
-  background-color: var(--color-brand-normal);
   padding: 16px 0;
+
+  @media screen and (min-width: 1280px) {
+    background-color: var(--color-brand-normal);
+  }
 }
 
 .advantages-list {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 40px;
+  background-color: var(--color-brand-light);
+  border-radius: 24px;
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+  }
 }
 
 .advantages-item {
-  color: var(--color-primary-light);
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 300;
+
+  @media screen and (min-width: 1280px) {
+    color: var(--color-primary-light);
+    font-size: 20px;
+  }
 }

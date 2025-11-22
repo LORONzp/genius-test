@@ -1,5 +1,9 @@
 .traditions-section {
   padding-top: 96px;
+
+  @media screen and (max-width: 1280px) {
+    padding-top: 40px;
+  }
 }
 
 .traditions-title {
@@ -8,6 +12,7 @@
 
 .traditions-container {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 40px;
 }
@@ -28,4 +33,13 @@
 
 .traditions-text.limited {
   max-width: 340px;
+}
+
+.traditions-img {
+  display: block;
+  border-radius: 400px 400px 0px 0px;
+
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
 }
