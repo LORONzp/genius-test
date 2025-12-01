@@ -3,6 +3,7 @@
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+  margin-bottom: 16px;
 }
 
 .adress-link:hover {
@@ -11,11 +12,12 @@
 
 .adress-copyright {
   font-size: 14px;
+  color: var(--color-secondary-dark);
 }
 
 .footer {
   position: relative;
-  background-image: url(./images/footer.png);
+  background-image: url(/images/footer.png);
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,17 +36,35 @@
 .footer-container {
   display: flex;
   gap: 20px;
+  flex-direction: column;
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+  }
 }
 
 .footer-nav,
 .footer-adress {
-  flex-basis: 50%;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    flex-basis: 50%;
+    text-align: left;
+  }
 }
 
 .adress-info,
 .adress-list {
   flex-grow: 1;
+}
+.footer-menu,
+.adress-list {
+  margin: 0;
+  padding-left: 0;
 }
 
 .footer-logo,
@@ -52,18 +72,32 @@
   flex-grow: 1;
 }
 
+.footer-menu {
+  padding-top: -40px;
+}
+// .footer-logo {
+//   align-items: center;
+
+//   @media screen and (min-width: 1280px) {
+//     display: flex;
+//   }
+// }
+// .footer-logo {
+//   margin-top: 32px;
+// }
+
 .footer::before {
   width: 180px;
   height: 120px;
   left: 0;
-  background-image: url(./images/decor-bread-small.png);
+  background-image: url(/images/decor-bread-small.png);
 }
 
 .footer::after {
   width: 380px;
   height: 180px;
   right: 0;
-  background-image: url(./images/decor-bread-large.png);
+  background-image: url(/images/decor-bread-large.png);
 }
 
 .footer::before,
@@ -72,4 +106,8 @@
   bottom: 0;
   background-repeat: no-repeat;
   content: '';
+}
+
+.footer-link {
+  margin-bottom: 16px;
 }

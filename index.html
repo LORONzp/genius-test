@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <!-- <link
@@ -82,7 +83,7 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="section" id="chefs-section">
+        <section class="section" id="chefs-section">
             <div class="container">
                 <h2 class="chefs-title section-title centered">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
                 <ul class="chefs-list">
@@ -116,34 +117,35 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="section" id="format-section">
+        </section>
+        <section class="section" id="format-section">
             <div class="container">
                 <h2 class="formats-title section-title centered">Формати</h2>
-                <div class="formats-container">
+                <div class="formats-slider">
                     <div>
-                        <button class="carousel-button" type="button">
+                        <button class="format-button carousel-button prev" type="button">
                             <svg width="16" height="16">
                                 <use href="./images/icons.svg#icon-Arrow-1"></use>
                             </svg>
                         </button>
                     </div>
-                    <div>
-                        <ul class="formats-list">
-                            <li class="formats-item">
+                    <div class="formats-container swiper-container">
+                        <ul class="swiper-wrapper formats-item formats-list">
+                            <li class="swiper-slide">
                                 <article class="format-card">
                                     <img class="format-image" src="./images/walrus.jpg" alt="Walrus format">
                                     <h3 class="format-title" lang="en">Walrus</h3>
                                     <div class="format-text">
                                         <p>Площа: до 120 м2</p>
                                         <p>Меню: розширене меню</p>
-                                        <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                                            офіціанти-різнороби
                                         </p>
                                         <p>Посадкові місця: є</p>
                                     </div>
                                 </article>
                             </li>
-                            <li class="formats-item">
+                            <li class="swiper-slide">
                                 <article class="format-card">
                                     <img class="format-image" src="./images/horseshoe.jpg" alt="Horseshoe format">
                                     <h3 class="format-title" lang="en">Horseshoe</h3>
@@ -155,7 +157,45 @@
                                     </div>
                                 </article>
                             </li>
-                            <li class="formats-item">
+                            <li class="swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-image" src="./images/handlebar.jpg" alt="Handlebar format">
+                                    <h3 class="format-title" lang="en">Handlebar</h3>
+                                    <div class="format-text">
+                                        <p>Площа: до 15 м2</p>
+                                        <p>Меню: найпопулярніші позиції меню </p>
+                                        <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                                        <p>Посадкові місця: відсутні</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-image" src="./images/walrus.jpg" alt="Walrus format">
+                                    <h3 class="format-title" lang="en">Walrus</h3>
+                                    <div class="format-text">
+                                        <p>Площа: до 120 м2</p>
+                                        <p>Меню: розширене меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                                            офіціанти-різнороби
+                                        </p>
+                                        <p>Посадкові місця: є</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-image" src="./images/horseshoe.jpg" alt="Horseshoe format">
+                                    <h3 class="format-title" lang="en">Horseshoe</h3>
+                                    <div class="format-text">
+                                        <p>Площа: до 25 м2</p>
+                                        <p>Меню: найпопулярніші позиції меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                                        <p>Посадкові місця: відсутні</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
                                 <article class="format-card">
                                     <img class="format-image" src="./images/handlebar.jpg" alt="Handlebar format">
                                     <h3 class="format-title" lang="en">Handlebar</h3>
@@ -168,9 +208,15 @@
                                 </article>
                             </li>
                         </ul>
+                        <div class="pagination">
+                            <span class="pagination-button"></span>
+                            <span class="pagination-button"></span>
+                            <span class="pagination-button"></span>
+                            <span class="pagination-button"></span>
+                        </div>
                     </div>
                     <div>
-                        <button class="carousel-button next" type="button">
+                        <button class="format-button carousel-button next" type="button">
                             <svg width="16" height="16">
                                 <use href="./images/icons.svg#icon-Arrow-1"></use>
                             </svg>
@@ -178,8 +224,8 @@
                     </div>
                 </div>
             </div>
-        </section> -->
-        <!-- <section class="contact-section section" id="contact-section">
+        </section>
+        <section class="contact-section section" id="contact-section">
             <div class="container">
                 <div class="contact-container">
                     <div class="contact-form">
@@ -216,9 +262,9 @@
                 </div>
 
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-container">
                 <nav class="footer-nav">
@@ -228,10 +274,10 @@
                         </a>
                     </div>
                     <ul class="footer-menu">
-                        <li><a class="link" href="#">Франшиза</a></li>
-                        <li><a class="link" href="#">Наші традиції</a></li>
-                        <li><a class="link" href="#">Формати</a></li>
-                        <li><a class="link" href="#">Контакти</a></li>
+                        <li><a class="link footer-link" href="#">Франшиза</a></li>
+                        <li><a class="link footer-link" href="#">Наші традиції</a></li>
+                        <li><a class="link footer-link" href="#">Формати</a></li>
+                        <li><a class="link footer-link" href="#">Контакти</a></li>
                     </ul>
                 </nav>
                 <address class="footer-adress">
@@ -260,7 +306,7 @@
                 </address>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden">
         <div class="modal">
             <button class="modal-btn-close" type="button">Close</button>
@@ -298,6 +344,8 @@
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
 </body>
 
 </html>
