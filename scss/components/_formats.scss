@@ -15,9 +15,15 @@
 }
 
 .format-text {
+  display: block;
+  height: 110px;
   font-size: 14px;
   font-weight: 300;
   color: var(--color-primary-light);
+}
+.format-text p {
+  margin: 0;
+  padding: 0;
 }
 
 // .formats-item {

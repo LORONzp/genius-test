@@ -24,20 +24,29 @@
                         <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
                     </a>
                     <ul class="header-menu">
-                        <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+                        <li><a class="link our-traditions-color" href="#traditions-section">Наші традиції</a></li>
                         <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
                         <li><a class="link" href="#format-section">Формати</a></li>
                         <li><a class="link" href="#contact-section">Контакти</a></li>
                     </ul>
                 </nav>
-                <button class="header_button modal-btn-open" type="button">Замовити дзвінок</button>
+                <button class="header_button modal-btn-open button" type="button">Замовити дзвінок</button>
                 <button class="header-burger-button menu-btn-open" type="button">
                     <svg width="24" height="24">
                         <use href="./images/icons.svg#icon-menu"></use>
                     </svg>
                 </button>
                 <div class="mobile-menu">
+                    <a href="/">
+                        <img class="logo2" src="./images/logo2.svg" alt="logo">
+                    </a>
                     <button class="mobile-menu-btn-close menu-btn-close" type="button">Close</button>
+                    <ul class="ululu">
+                        <li><a class="menu-btn-close" href="#traditions-section">Наші традиції</a></li>
+                        <li><a class="menu-btn-close" href="#chefs-section">Шеф-кухарі</a></li>
+                        <li><a class="menu-btn-close" href="#format-section">Формати</a></li>
+                        <li><a class="menu-btn-close" href="#contact-section">Контакти</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -62,7 +71,7 @@
         </section>
         <section class="traditions-section" id="traditions-section">
             <div class="container">
-                <div class="traditions-container">
+                <div class="traditions-container" id="traditions-container">
                     <div class="traditions-content">
                         <h2 class="traditions-title section-title">Новий формат традицій</h2>
                         <p class="traditions-text"><span class="span-uppercase">shop bakery</span> — це пекарня, яка
@@ -227,7 +236,7 @@
         </section>
         <section class="contact-section section" id="contact-section">
             <div class="container">
-                <div class="contact-container">
+                <div class="contact-container" id="contact-container">
                     <div class="contact-form">
                         <h2 class="contact-title section-title">Приєднуйся до мережі пекарень</h2>
                         <p>Заповни форму, щоб ми звʼязалися з тобою!</p>
@@ -274,30 +283,32 @@
                         </a>
                     </div>
                     <ul class="footer-menu">
-                        <li><a class="link footer-link" href="#">Франшиза</a></li>
-                        <li><a class="link footer-link" href="#">Наші традиції</a></li>
-                        <li><a class="link footer-link" href="#">Формати</a></li>
-                        <li><a class="link footer-link" href="#">Контакти</a></li>
+                        <li><a class="link footer-link" href="#traditions-container">Наші традиції</a></li>
+                        <li><a class="link footer-link" href="#chefs-section">Наші шеф-кухарі</a></li>
+                        <li><a class="link footer-link" href="#format-section">Формати</a></li>
+                        <li><a class="link footer-link" href="#contact-container">Контакти</a></li>
                     </ul>
                 </nav>
                 <address class="footer-adress">
                     <ul class="adress-list">
-                        <li><a class="adress-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-                        <li><a class="adress-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
+                        <li><a class="adress-link" href="tel:+380960000007">+ 38 (000) 000 00 00</a></li>
+                        <li><a class="adress-link" href="mailto:shopbakery@gmail.com">b&s@gmail.com</a></li>
                         <li><a class="adress-link"
                                 href="https://maps.apple.com/place?address=%D0%A1%D0%B5%D1%87%D0%B5%D0%B2%D1%8B%D1%85%20%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D1%8C%D1%86%D0%BE%D0%B2%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0,%2054,%20%D0%9A%D0%B8%D0%B5%D0%B2,%2004050,%20%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0&coordinate=50.456631,30.491295&name=%D0%A1%D0%B5%D1%87%D0%B5%D0%B2%D1%8B%D1%85%20%D0%A1%D1%82%D1%80%D0%B5%D0%BB%D1%8C%D1%86%D0%BE%D0%B2%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0,%2054&map=explore"
                                 target="_blank">Україна,
                                 м. Київ, вул. Січових Стрільців 54</a></li>
-                        <li><a href="#">
-                                <svg class="adress-icon" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-facebook"></use>
-                                </svg>
-                            </a></li>
-                        <li><a href="#">
-                                <svg class="adress-icon" width="32" height="32">
-                                    <use href="./images/icons.svg#icon-instagram"></use>
-                                </svg>
-                            </a></li>
+                        <div class="social-networks">
+                            <li><a href="#">
+                                    <svg class="adress-icon" width="32" height="32">
+                                        <use href="./images/icons.svg#icon-facebook"></use>
+                                    </svg>
+                                </a></li>
+                            <li><a href="#">
+                                    <svg class="adress-icon" width="32" height="32">
+                                        <use href="./images/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a></li>
+                        </div>
                     </ul>
                     <div class="adress-info">
                         <a class="adress-link" href="#" target="_blank">Політика конфідеційності</a>
