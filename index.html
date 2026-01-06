@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="top">
         <div class="container">
             <div class="header-container">
                 <nav class="header-nav">
@@ -37,16 +37,16 @@
                     </svg>
                 </button>
                 <div class="mobile-menu">
-                    <a href="/">
+                    <a href="/index.html">
                         <img class="logo2" src="./images/logo2.svg" alt="logo">
                     </a>
                     <button class="mobile-menu-btn-close menu-btn-close" type="button">Close</button>
-                    <ul class="ululu">
-                        <li><a class="menu-btn-close" href="#traditions-section">Наші традиції</a></li>
-                        <li><a class="menu-btn-close" href="#chefs-section">Шеф-кухарі</a></li>
-                        <li><a class="menu-btn-close" href="#format-section">Формати</a></li>
-                        <li><a class="menu-btn-close" href="#contact-section">Контакти</a></li>
-                    </ul>
+                    <div class="ululu">
+                        <a href="#traditions-section" class="links menu-btn-close1">Наші традиції</a>
+                        <a href="#chefs-section" class="links menu-btn-close2">Шеф-кухарі</a>
+                        <a href="#format-section" class="links menu-btn-close3">Формати</a>
+                        <a href="#contact-section" class="links menu-btn-close4">Контакти</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -278,7 +278,7 @@
             <div class="footer-container">
                 <nav class="footer-nav">
                     <div class="footer-logo">
-                        <a href="#">
+                        <a href="#top">
                             <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
                         </a>
                     </div>
@@ -357,6 +357,7 @@
     <script src="./js/mobile-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
+    <script src="./js/fref-scroll.js"></script>
 </body>
 
 </html>

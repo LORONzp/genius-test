@@ -9,3 +9,14 @@
 .link:hover {
   color: var(--color-brand-normal);
 }
+.links {
+  color: var(--color-primary-dark);
+  font-weight: 300;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.4s;
+  margin-bottom: 16px;
+}
+.links:hover {
+  color: var(--color-brand-normal);
+}

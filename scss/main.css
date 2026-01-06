@@ -369,6 +369,19 @@ section {
   color: var(--color-brand-normal);
 }
 
+.links {
+  color: var(--color-primary-dark);
+  font-weight: 300;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 0.4s;
+  margin-bottom: 16px;
+}
+
+.links:hover {
+  color: var(--color-brand-normal);
+}
+
 .chefs-title .accent {
   color: var(--color-brand-normal);
 }
@@ -899,9 +912,9 @@ section {
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 70px;
+  justify-content: left;
+  top: 100px;
+  left: 24px;
 }
 
 .pagination {
