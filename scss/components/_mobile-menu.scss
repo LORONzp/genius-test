@@ -18,13 +18,15 @@
   position: absolute;
   top: 16px;
   right: 24px;
+  border: none;
+  background-color: transparent;
 }
 .logo2 {
   position: absolute;
-  top: 16px;
-  left: 24px;
+  top: 20px;
+  left: 16px;
   width: 107px;
-  height: 45px;
+  height: 47px;
 }
 .ululu {
   position: absolute;
@@ -34,4 +36,15 @@
   // align-items: center;
   top: 100px;
   left: 24px;
+}
+.close-btn {
+  width: 12px;
+  height: 12px;
+}
+.hlibchik-mob {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 240px;
 }

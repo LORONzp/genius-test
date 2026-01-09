@@ -195,10 +195,11 @@ section {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  display: none;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .header_section_button {
-    display: none;
+    display: block;
   }
 }
 
@@ -275,6 +276,12 @@ section {
   .advantages-item {
     color: var(--color-primary-light);
     font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container-media {
+    position: relative;
   }
 }
 
@@ -378,7 +385,7 @@ section {
   margin-bottom: 16px;
 }
 
-.links:hover {
+.links:active {
   color: var(--color-brand-normal);
 }
 
@@ -747,14 +754,15 @@ section {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 0;
   transition: opacity 0.4s, visibility 0.4s;
+  z-index: 1;
 }
 
 .modal {
-  position: relative;
+  position: absolute;
   width: 100%;
   max-width: 880px;
   height: 100%;
-  max-height: 880px;
+  max-height: 780px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
   padding: 128px;
@@ -771,6 +779,16 @@ section {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-btn-close {
+  border: none;
+  background-color: transparent;
+}
+
+.modal-close-btn {
+  width: 22px;
+  height: 22px;
 }
 
 .form-field {
@@ -898,14 +916,16 @@ section {
   position: absolute;
   top: 16px;
   right: 24px;
+  border: none;
+  background-color: transparent;
 }
 
 .logo2 {
   position: absolute;
-  top: 16px;
-  left: 24px;
+  top: 20px;
+  left: 16px;
   width: 107px;
-  height: 45px;
+  height: 47px;
 }
 
 .ululu {
@@ -915,6 +935,19 @@ section {
   justify-content: left;
   top: 100px;
   left: 24px;
+}
+
+.close-btn {
+  width: 12px;
+  height: 12px;
+}
+
+.hlibchik-mob {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  height: 240px;
 }
 
 .pagination {
